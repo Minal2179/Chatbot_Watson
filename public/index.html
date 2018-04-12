@@ -1,17 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Watson Conversation Bot Starter</title>
+<title>Sennovate Bot</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="userMessage('');">
+
+
 <div class="container">
+	
     <div class="chatbot">
+    	<div class="header">
+			<img src="css/img/sennovate.png">
+		</div>
         <div id="chatBox" class="dialogContainer"></div>
-        <textarea rows="4" id="chatMessage" class="dialogInput" placeholder="Get talking" onkeypress="return newEvent(event)"></textarea>
+        <textarea rows="4" id="chatMessage" class="dialogInput" placeholder="Type here" onkeypress="return newEvent(event)"></textarea>
     </div><!-- End class chatbot --> 
 </div><!-- End class container -->
 </body>

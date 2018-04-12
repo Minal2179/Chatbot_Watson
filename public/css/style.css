@@ -12,6 +12,11 @@
 	align-items: center;
     justify-content: center;
 }
+.chatbot{
+    position: relative;
+    top: 20%;
+    transform: translateY(20%);
+}
 
 .dialogContainer {
     display: flex;
