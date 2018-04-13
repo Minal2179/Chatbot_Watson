@@ -86,12 +86,16 @@ function userMessage(message) {
         if (xhr.status === 200 && xhr.responseText) {
 
             var response = JSON.parse(xhr.responseText);
+            console.log(response.output.length);
             var text = response.output.text[0]; // Only display the first response
             context = response.context; // Store the context for next round of questions
-
+            var i;
             console.log("Got response from Bot: ", JSON.stringify(response));
+            for (i in response.output.text) {
+                text = response.output.text[i];
+                displayMessage(text, watson);
+            }
             
-            displayMessage(text, watson);
 
         } else {
             console.error('Server error for Conversation. Return status of: ', xhr.statusText);
