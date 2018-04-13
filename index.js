@@ -28,7 +28,7 @@ var conversation = new watson_conv({
 
  var message = function(text, context) {
   var payload = {
-    workspace_id: process.env.WORKSPACE_ID || '252aa1f1-6adf-40e5-a1ee-538359ccd791',
+    workspace_id: process.env.WORKSPACE_ID || '71f59d91-7b9c-4717-ae2e-376c09b9dcff',
     input: {
       text: text
     },
